@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Reservation Request</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <h1>Reservation Request</h1>
+            <fieldset>
+                <legend>General Information</legend>
+                <label for="arrivalDate">Arrivsl Date: <input type="date" id="general" class="date"></label>
+                <label for="nights" >Nights:<input type="number" id="general" class="night"> </label>
+                <label for="adult" >Adults: 
+                    <select class="selection" id="general">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </label>
+                <label for="child">Children: 
+                    <select id="general" class="child">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="roomType" id="preference">Room type: 
+                    <input type="radio" name="room-type"> Standard
+                    <input type="radio" name="room-type"> Business
+                    <input type="radio" name="room-type"> Suite
+                </label>
+                <label for="bedType" id="preference">Bed type: 
+                    <input type="radio" name="bed-type"> King
+                    <input type="radio" name="bed-type"> Double Double
+                </label>
+                <label for="smoke" id="smoke"><input type="checkbox"> Smoking 
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name: <input type="text" id="contact" required> </label>
+                <label for="eaddress">Email: <input type="email" id="contact" > </label>
+                <label for="phone">Phone: <input type="tel" id="contact"  placeholder="07********" pattern="[0-9]{10}" maxlength="10"> </label> 
+            </fieldset>
+            <div class="footer">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button class="clear">Clear</button>
+            </div>
+
+            
+        </form>
+    </body>
+</html>

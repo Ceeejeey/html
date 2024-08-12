@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,inline-scale=1.0">
+        <title>Speaker Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <h1>Speaker Registration</h1>
+            <div class="form-container">
+                <div class="leftSide">
+                    <label for="pre">Prefix <input type="text" id="left"> </label>
+                    <label for="name">Name 
+                        
+                            <input type="text" id="first" placeholder="First Name" class="name">
+                            <input type="text" id="second" placeholder="Last Name" class="name">
+                        
+                     </label>
+                    <label for="main">Email<input type="email" placeholder="sample@example.com" id="left" >  </label>
+                    <label for="phone">Work Phone <input id="left" type="tel" pattern="[0-9]{10}" maxlength="10">  </label>
+                    <label for="job">Job Title <input type="text" id="left"> </label>
+                    <label for="company">Affilication/Company/Organization<input type="text" id="left"> </label>
+                    <label for="location">Location<input type="text" id="left"> </label>
+                    <label for="idea">Do you need assistance with your flight reservation?<input type="radio"> Yes<span></span><input type="radio"> No </label>
+                </div>
+                <div class="rightSide">
+                    <div class="presentation">
+                        <p>What is your presentationn type?</p>
+                        <label for="present"><input type="radio" id="present">Lecture</label>
+                        <label for="present"><input type="radio" id="present">Case study</label>
+                        <label for="present"><input type="radio" id="present">Group Discussion</label>
+                        <label for="present"><input type="radio" id="present">Product Demo</label> 
+                    </div>
+                    <div class="title">
+                        <p>Please share the title of your presentation/speech</p>
+                        <label for="speech"><input type="text" > </label>
+                    </div>
+                    <div class="moderator">
+                        <p>Do you have any needs from a moderator?</p>
+                        <label for="needs"><input type="text"> </label>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

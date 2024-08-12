@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Binary to Hex & Octal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <label>Enter decimal number: </label>
+            <input type="text"  id="decimal">
+            <div class="buttons">
+                <button id="convert">Convert</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="converted_numbers">
+                <div class="binary">
+                    <label for="">Binary Number:</label><br>
+                    <div id="display-binary"></div>
+                </div>
+                <div class="hex">
+                    <label for="">Hexadecimal Number:</label><br>
+                    <div id="display-hex"></div>
+                </div>
+                <div class="octal">
+                    <label for="">Octal Number:</label><br>
+                    <div id="display-octal"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
